@@ -6,6 +6,7 @@ import Navbar from './components/Navbar';
 import  Carousel  from './components/Carousel';
 import Trendingartists from './components/Trendingartists';
 import Latestsongs from './components/Latestsongs';
+import Daysongs from './components/Daysongs';
 
 
 
@@ -15,7 +16,8 @@ function App() {
      <Navbar/>
       <Carousel/>
       <Trendingartists/>
-      <Latestsongs></Latestsongs>
+      <Latestsongs/>
+      <Daysongs/>
     </div>
   );
 }

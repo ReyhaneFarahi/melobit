@@ -27,8 +27,8 @@ useEffect(()=>{
     <div className="col" key={i}>
     <div className="card w-90" >
       {a.image&&<img src={a.image.cover.url} className="card-img-top Tsong" alt="..."/>}
-    <div className="card-body">
-      {a.fullName&& <p className="card-text">{a.fullName}</p>}
+      <div class="text-block-circel">
+      {a.fullName&& <p className="card-text-mini">{a.fullName}</p>}
     </div>
   </div>
   </div>

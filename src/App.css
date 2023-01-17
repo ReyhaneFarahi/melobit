@@ -21,7 +21,19 @@
   background-color: rgba(245, 245, 220, 0) !important;
   border-color: rgba(245, 245, 220, 0) !important;
   color: #ffffff !important;
+  padding-bottom: 30px;
 }
+
+.card-text-mini{
+  font-size: 10px;
+  /* color: #ffffff00; */
+}
+.card-text-mini:hover{
+  font-size: 10px;
+  /* color: #ffffffa2; */
+}
+
+
 .Tsong{
   border-radius: 20rem !important;
 }
@@ -94,6 +106,52 @@ body{
 
 .form-control{
   border-radius: 50px !important;
+}
+.text-block {
+  position: absolute;
+  height: 200px;
+  border-radius: 2rem;
+  right: 0px;
+  background-color: rgba(0, 0, 0, 0);
+  color: rgba(255, 255, 255, 0);
+  padding-left: 20px;
+  padding-right: 101px;
+  padding-top: 50px;
+  
+}
+
+.text-block-circel {
+  position: absolute;
+  height: 150px;
+  width: 150px;
+  top: -4px;
+  right: -4px;
+  border-radius: 50rem;
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  padding-left: 30px;
+  padding-top: 150px;
+}
+
+.text-block-circel:hover {
+  position: absolute;
+  height: 150px;
+  width: 150px;
+  top: -4px;
+  right: -4px;
+  border-radius: 50rem;
+  background-color: rgba(216, 27, 74, 0.219);
+  color: white;
+  padding-left: 30px;
+  padding-top: 150px;
+  transition: 0.3s;
+
+}
+
+.text-block:hover {
+  background-color: rgba(0, 0, 0, 0.644);
+  color: #ffffff;
+  transition: 0.3s;
 }
 
 .card-text{
