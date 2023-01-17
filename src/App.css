@@ -1,38 +1,106 @@
-.App {
+#navbarSupportedContent{
+  padding-bottom: 0.5rem;
+  padding-top: 1rem;
+}
+
+.tah2{
+  color: #ffffff;
+  padding-top: 2rem !important;
+  margin-bottom: 2rem !important;
+}
+
+.Lsong{
+  border-radius: 2rem !important;
+}
+
+.song-box{
+  background-color: #6c17db36;
+}
+
+.card{
+  background-color: rgba(245, 245, 220, 0) !important;
+  border-color: rgba(245, 245, 220, 0) !important;
+  color: #ffffff !important;
+}
+.Tsong{
+  border-radius: 20rem !important;
+}
+
+.navbar-brand{
+  font-size: 2rem !important;
+  color: rgb(255, 255, 255) !important;
+}
+.btn-danger{
+  border-radius: 25rem;
+  /* margin-left: 20%; */
   text-align: center;
+  padding-bottom: 2rem;
+  margin-top: -0.1rem;
+  height:0rem;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+}
+.navbar-toggler-icon {
+  background-image: none;
+  color: rgb(255, 255, 255);
+  background-color: #ffffff;
+  border-radius: 5px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.nav-link{
+  color: rgb(255, 255, 255) !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.form-control{
+  border-radius: 25rem;
+  background-color: rgba(255, 255, 255, 0.623);
+  color: #ffffff !important;
+  /* margin-right: -2rem !important; */
+  
+}
+.navbar{
+ background-color: rgb(4, 4, 39) !important;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+body{
+  background: rgb(2,0,24);
+  background: linear-gradient(180deg, rgba(2,0,24,1) 0%, rgba(5,5,68,1) 43%, rgba(0,113,136,1) 100%); 
 }
 
-.App-link {
-  color: #61dafb;
+.navbar-nav {
+  margin-left: 25rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.carousel {
+  width: 1000px !important;
+  margin: auto;
+  margin-top: 5rem !important;
+  border-radius: 50px  !important;
+}
+
+.d-block {
+  border-radius: 50px  !important;
+  height: 500px !important;
+}
+
+.btn-outline-success{
+ background-color: rgb(179, 0, 54) !important;
+ border-color: rgb(179, 0, 54) !important;
+ color: rgb(255, 255, 255) !important;
+ border-radius: 50px !important;
+ padding-right: 20px !important;
+ padding-left: 20px !important;
+}
+
+.form-control{
+  border-radius: 50px !important;
+}
+
+.card-text{
+  font-size: 0.8rem;
+}
+
+.card-download{
+  color: #ffffffb4;
+  font-size: 0.8rem;
 }
