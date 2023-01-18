@@ -25,14 +25,14 @@
 }
 
 .card-text-mini{
-  font-size: 10px;
-  /* color: #ffffff00; */
+  margin-left: 10%;
+  color: rgb(255, 255, 255);
+  width: 100px;
+  height: 20px;
+  padding-left: 20px;
+  text-size-adjust: 80%;
+  overflow: hidden;
 }
-.card-text-mini:hover{
-  font-size: 10px;
-  /* color: #ffffffa2; */
-}
-
 
 .Tsong{
   border-radius: 20rem !important;
@@ -154,11 +154,87 @@ body{
   transition: 0.3s;
 }
 
+.card-text-fn{
+font-size: 0.8rem !important;
+color: #ffffff86 !important;
+}
+
+.card-text-group{
+  margin-top: 3rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+
+
 .card-text{
-  font-size: 0.8rem;
+  font-size: 1rem;
+  color: #ffffff;
 }
 
 .card-download{
   color: #ffffffb4;
   font-size: 0.8rem;
+}
+
+
+
+
+
+
+
+
+/* ================================= */
+/* Container needed to position the overlay. Adjust the width as needed */
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Make the image to responsive */
+.image {
+  width: 100%;
+  height: auto;
+  border-radius: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* The overlay effect (full height and width) - lays on top of the container and over the image */
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 2rem;
+  left: 0.7rem;
+  right: 0.7rem;
+  height: auto;
+  width: auto;
+  opacity: 0;
+  transition: .3s ease;
+  /* background-color: rgba(255, 0, 76, 0.527); */
+  background-image: linear-gradient(to top , rgb(0, 0, 0), rgba(38, 23, 105, 0.733));
+
+  border-radius: 2rem;
+}
+
+/* When you mouse over the container, fade in the overlay icon*/
+.container:hover .overlay {
+  opacity: 1;
+}
+
+/* The icon inside the overlay is positioned in the middle vertically and horizontally */
+.icon {
+  color: white;
+  font-size: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* When you move the mouse over the icon, change color */
+.fa-user:hover {
+  color: #eee;
 }
