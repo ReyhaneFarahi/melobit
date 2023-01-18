@@ -23,7 +23,7 @@ function Daysongs() {
   
     return (
       <div className="container-fluid">
-      <div className="row">
+      <div className="row song-box">
         <h2 className="tah2">Top 10 Day Song</h2>
         {daySong.map((d,i)=>(
           <div className="container col-2" key={i}>

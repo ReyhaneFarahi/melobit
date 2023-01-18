@@ -21,7 +21,7 @@ function Latestsongs() {
 
   return (
     <div className="container-fluid">
-      <div className="row ">
+      <div className="row song-box">
         <h2 className="tah2">New Songs</h2>
         {latestSong.map((l,i)=>(
           <div className="container col-2" key={i}>

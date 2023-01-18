@@ -36,11 +36,27 @@ function Details() {
 
     return (
         <div>
- {song.audio &&
+ 
+      {
+          song.album&&
+          <img src={song.album.image.cover.url} alt="artist"/>
+      }
+
+{song.audio &&
                 <audio co src={song.audio.high.url} ref={audioElm} ></audio>
             }
-              
-              <span onClick={()=>setIsPlaying(!isPlaying)}>
+ 
+      {
+          song.title&&
+          <h2>{song.title}</h2>
+      }
+
+      {
+          song.artists&&
+          <h2>{song.artists[0].fullName}</h2>
+      }
+
+<span onClick={()=>setIsPlaying(!isPlaying)}>
                      {
                          !isPlaying?    <svg xmlns="http://www.w3.org/2000/svg" color="black" width="16" height="16" fill="currentColor" className="bi bi-play-circle-fill" viewBox="0 0 16 16">
                          <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z" />
@@ -51,24 +67,6 @@ function Details() {
 </svg>
                      }
               </span>
-
-      
-      {song.lyrics &&
-        <p>{song.lyrics}</p>
-      }
-      {
-          song.title&&
-          <h2>{song.title}</h2>
-      }
-      {
-          song.album&&
-          <img src={song.album.image.cover.url} alt="artist"/>
-      }
-
-      {
-          song.artists&&
-          <h2>{song.artists[0].fullName}</h2>
-      }
 {
     song.audio&&
     <>
@@ -76,6 +74,10 @@ function Details() {
                       <a className='text-decoration-none text-dark' href={song.audio.high.url} download>with 320 quality</a>
     </>
 }
+
+{song.lyrics &&
+        <p>{song.lyrics}</p>
+      }
 
 
 

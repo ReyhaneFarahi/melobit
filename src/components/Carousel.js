@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
+
 
 
 function Carousel() {
@@ -31,7 +33,9 @@ useEffect(()=>{
   <div className="carousel-inner">
     {song.map((s,i)=>(
       <div  className={i===0?"carousel-item active":"carousel-item"} key={i}>
+        <Link to={`details/${s.id}`} className='text-decoration-none text-dark'>
         {s.album && <img src={s.album.image.cover.url} className="d-block w-100" alt="..."/>}
+        </Link>
     </div>
     ))}
      

@@ -7,6 +7,7 @@
   color: #ffffff;
   padding-top: 2rem !important;
   margin-bottom: 2rem !important;
+  text-align: center;
 }
 
 .Lsong{
@@ -14,7 +15,8 @@
 }
 
 .song-box{
-  background-color: #6c17db36;
+  margin-top: 5rem !important;
+  background-color: #e7d8d83a;
 }
 
 .card{
@@ -57,6 +59,11 @@
   color: rgb(255, 255, 255);
   background-color: #ffffff;
   border-radius: 5px;
+}
+.footer{
+  padding-top: 1rem;
+  text-align: center;
+  color: rgba(238, 238, 238, 0);
 }
 
 .nav-link{
@@ -177,14 +184,6 @@ color: #ffffff86 !important;
   font-size: 0.8rem;
 }
 
-
-
-
-
-
-
-
-/* ================================= */
 /* Container needed to position the overlay. Adjust the width as needed */
 .container {
   position: relative;
@@ -238,3 +237,9 @@ color: #ffffff86 !important;
 .fa-user:hover {
   color: #eee;
 }
+
+
+
+
+
+

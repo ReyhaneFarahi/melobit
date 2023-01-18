@@ -20,8 +20,8 @@ function Weeksongs() {
 
     return (
       <div className="container-fluid">
-      <div className="row">
-        <h2 className="tah2">Top 10 Day Song</h2>
+      <div className="row song-box">
+        <h2 className="tah2">Top 10 Week Song</h2>
         {weekSongs.map((w,i)=>(
           <div className="container col-2" key={i}>
             <Link to={`details/${w.id}`} className='text-decoration-none text-dark'>
@@ -36,6 +36,9 @@ function Weeksongs() {
             </Link>
           </div>
         ))}
+      </div>
+      <div className="footer">
+        <p>create react app, melobit</p>
       </div>
     </div>
     );
