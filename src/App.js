@@ -5,6 +5,7 @@ import 'bootstrap/dist/js/bootstrap.min.js';
 import Navbar from './components/Navbar';
 import Details from './components/Details';
 import Home from './components/Home';
+import Search from './components/Search'
 import { Route, Routes} from 'react-router-dom';
 
 
@@ -17,7 +18,7 @@ function App() {
           <Route path="/details/:id" element={<Details />} />
           <Route path="search/details/:id" element={<Details />} />
           <Route path="/" element={<Home/>} />
-          {/* <Route path="/search" element={<Search/>} />        */}
+           <Route path="/search" element={<Search/>} />       
       </Routes>
 
     </div>

@@ -36,6 +36,11 @@
   overflow: hidden;
 }
 
+.dropdown{
+  direction: ltr !important;
+  text-align: left !important;
+}
+
 .Tsong{
   border-radius: 20rem !important;
 }

@@ -66,15 +66,7 @@ function Details() {
         </h5>
         <h5 class="card-title">
             
-<div>
-{
-    song.audio&&
-    <>
-    <a  className='text-decoration-none text-dark' href={song.audio.medium.url} download>with 128 quality</a>
-                      <a className='text-decoration-none text-dark' href={song.audio.high.url} download>with 320 quality</a>
-    </>
-}
-</div>
+
         </h5>
         <h5 className="card-title">
         <div>
@@ -91,7 +83,7 @@ function Details() {
       }
 </div>
         </p>
-        <p className="card-text"><small className="text-muted">
+        <p className="card-text"> 
         <div>    
 <span onClick={()=>setIsPlaying(!isPlaying)}>
                      {
@@ -107,8 +99,25 @@ function Details() {
               </span>
 </div>
 
-            </small></p>
-      </div>
+           </p>
+      
+      <div>
+
+<div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Download
+  </button>
+  {
+    song.audio&&
+    <>
+  <ul class="dropdown-menu">
+    <li><button class="dropdown-item" type="button"><a  className='text-decoration-none text-dark' href={song.audio.medium.url} download>with 128 quality</a></button></li>
+    <li><button class="dropdown-item" type="button">  <a className='text-decoration-none text-dark' href={song.audio.high.url} download>with 320 quality</a></button></li>
+  </ul> 
+  </>} 
+</div>
+</div>
+</div>
     </div>
   </div>
 </div>
