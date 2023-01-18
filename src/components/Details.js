@@ -35,30 +35,68 @@ function Details() {
 
 
     return (
-        <div>
- 
-      {
-          song.album&&
-          <img src={song.album.image.cover.url} alt="artist"/>
-      }
-
+<div className="card mb-3 detail-whith" >
+  <div className="row g-0">
+  <div>
 {song.audio &&
                 <audio co src={song.audio.high.url} ref={audioElm} ></audio>
             }
- 
+</div>
+
+    <div className="col-md-4">
+    <div>
+      {
+          song.album&&
+          <img src={song.album.image.cover.url} className="img-fluid rounded-start image-detail" alt="artist"/>
+      }
+        </div>
+    </div>
+
+
+    <div className="col-md-8 card-box-detail">
+      <div className="card-body">
+        <h5 className="card-title">
+            
+ <div>
       {
           song.title&&
           <h2>{song.title}</h2>
       }
-
+ </div>
+        </h5>
+        <h5 class="card-title">
+            
+<div>
+{
+    song.audio&&
+    <>
+    <a  className='text-decoration-none text-dark' href={song.audio.medium.url} download>with 128 quality</a>
+                      <a className='text-decoration-none text-dark' href={song.audio.high.url} download>with 320 quality</a>
+    </>
+}
+</div>
+        </h5>
+        <h5 className="card-title">
+        <div>
       {
           song.artists&&
           <h2>{song.artists[0].fullName}</h2>
       }
-
+</div>
+        </h5>
+        <p className="card-text">
+        <div>
+{song.lyrics &&
+        <p>{song.lyrics}</p>
+      }
+</div>
+        </p>
+        <p className="card-text"><small className="text-muted">
+        <div>    
 <span onClick={()=>setIsPlaying(!isPlaying)}>
                      {
-                         !isPlaying?    <svg xmlns="http://www.w3.org/2000/svg" color="black" width="16" height="16" fill="currentColor" className="bi bi-play-circle-fill" viewBox="0 0 16 16">
+                         !isPlaying?    
+                         <svg xmlns="http://www.w3.org/2000/svg" color="black" width="16" height="16" fill="currentColor" className="bi bi-play-circle-fill" viewBox="0 0 16 16">
                          <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z" />
                      </svg>
                      :
@@ -67,21 +105,13 @@ function Details() {
 </svg>
                      }
               </span>
-{
-    song.audio&&
-    <>
-    <a  className='text-decoration-none text-dark' href={song.audio.medium.url} download>with 128 quality</a>
-                      <a className='text-decoration-none text-dark' href={song.audio.high.url} download>with 320 quality</a>
-    </>
-}
+</div>
 
-{song.lyrics &&
-        <p>{song.lyrics}</p>
-      }
-
-
-
-        </div>
+            </small></p>
+      </div>
+    </div>
+  </div>
+</div>
     );
 }
 

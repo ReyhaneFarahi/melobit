@@ -97,6 +97,16 @@ body{
   border-radius: 50px  !important;
 }
 
+.card-box-detail{
+  direction: rtl;
+  background-color: rgba(34, 34, 33, 0.603);
+}
+
+.detail-whith{
+  padding-top: 3rem;
+  height: 35.4rem !important;
+}
+
 .d-block {
   border-radius: 50px  !important;
   height: 500px !important;
@@ -113,52 +123,6 @@ body{
 
 .form-control{
   border-radius: 50px !important;
-}
-.text-block {
-  position: absolute;
-  height: 200px;
-  border-radius: 2rem;
-  right: 0px;
-  background-color: rgba(0, 0, 0, 0);
-  color: rgba(255, 255, 255, 0);
-  padding-left: 20px;
-  padding-right: 101px;
-  padding-top: 50px;
-  
-}
-
-.text-block-circel {
-  position: absolute;
-  height: 150px;
-  width: 150px;
-  top: -4px;
-  right: -4px;
-  border-radius: 50rem;
-  background-color: rgba(0, 0, 0, 0);
-  color: white;
-  padding-left: 30px;
-  padding-top: 150px;
-}
-
-.text-block-circel:hover {
-  position: absolute;
-  height: 150px;
-  width: 150px;
-  top: -4px;
-  right: -4px;
-  border-radius: 50rem;
-  background-color: rgba(216, 27, 74, 0.219);
-  color: white;
-  padding-left: 30px;
-  padding-top: 150px;
-  transition: 0.3s;
-
-}
-
-.text-block:hover {
-  background-color: rgba(0, 0, 0, 0.644);
-  color: #ffffff;
-  transition: 0.3s;
 }
 
 .card-text-fn{
@@ -233,10 +197,6 @@ color: #ffffff86 !important;
   text-align: center;
 }
 
-/* When you move the mouse over the icon, change color */
-.fa-user:hover {
-  color: #eee;
-}
 
 
 
