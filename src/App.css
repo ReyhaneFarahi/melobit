@@ -207,7 +207,7 @@ body{
 .carousel {
   width: 1000px !important;
   margin: auto;
-  margin-top: 5rem !important;
+  margin-top: 2.5rem !important;
   border-radius: 50px  !important;
 }
 
@@ -294,6 +294,19 @@ color: #ffffff86 !important;
   background-image: linear-gradient(to top , rgb(0, 0, 0), rgba(38, 23, 105, 0.733));
 
   border-radius: 2rem;
+}
+
+.card-img-top-search:hover{
+  background-color: rgba(255, 255, 255, 0.733);
+  position: relative;
+  height: auto;
+  width: auto;
+  border-radius: 2rem;
+  transition: .3s ease;
+}
+
+.card-img-top-search{
+  border-radius: 20rem;
 }
 
 /* When you mouse over the container, fade in the overlay icon*/
