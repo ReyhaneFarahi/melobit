@@ -52,6 +52,38 @@ figure{
 .detail-name-actor{
   color: rgba(255, 255, 255, 0.699);
 }
+.bi-search-heart:hover{
+  color: rgb(179, 0, 54);
+}
+.bi-search-heart{
+  margin-top: 5px;
+  color: #ffffff;
+  height: 30px !important;
+    width: 30px !important;
+}
+
+.color-input {
+color: black !important;
+background-color: rgb(255, 255, 255) !important;
+}
+
+.bi-file-earmark-music{
+  height: 30% !important;
+    width: 30% !important;
+    padding-bottom: 3rem;
+    padding-top: 2rem;
+    color: rgba(255, 255, 255, 0.39);
+    -webkit-transform: rotate(10deg);
+    -moz-transform: rotate(10deg);
+    -o-transform: rotate(10deg);
+    -ms-transform: rotate(10deg);
+    transform: rotate(10deg);
+    
+}
+
+.invisible {
+  visibility: hidden;
+}
 
 audio{
   border-radius: 20rem !important;
@@ -155,7 +187,7 @@ max-width: 100% !important;
 .form-control{
   border-radius: 25rem;
   background-color: rgba(255, 255, 255, 0.623);
-  color: #ffffff !important;
+  color: #000000 !important;
   /* margin-right: -2rem !important; */
   
 }
@@ -202,6 +234,7 @@ body{
  border-radius: 50px !important;
  padding-right: 20px !important;
  padding-left: 20px !important;
+ margin-left: 20px;
 }
 
 .form-control{
