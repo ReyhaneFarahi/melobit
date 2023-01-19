@@ -25,102 +25,100 @@ function Details() {
 
 
     useEffect(()=>{
-        if( isPlaying && audioElm.current){
+        if( isPlaying && audioElm.current) {
             audioElm.current.play()
-        }else if(audioElm.current )
+        }else if(audioElm.current ) 
         {
             audioElm.current.pause() ;
         }
-       })
+    })
 
 
     return (
-<div className="card mb-3 detail-whith" >
-  <div className="row g-0">
-  <div>
-{song.audio &&
-                <audio co src={song.audio.high.url} ref={audioElm} ></audio>
-            }
-</div>
+        <div className="card mb-3 detail-whith " >
+            <div className="row g-0 detail-shadow">
+                <div className="col-md-4 container-images-detail">
+                    <div>
+                        {
+                            song.album&&
+                            <img src={song.album.image.cover.url} className="img-fluid detail-image-blure rounded-start image-detail" alt="artist" />
+                        }
+                     
+                         {
+                            song.album&&
+                            <img src={song.album.image.cover.url} className="img-fluid detail-image-circle rounded-start image-detail" alt="artist" />
+                        }
+                    </div>
+                        
+                </div>
 
-    <div className="col-md-4">
-    <div>
-      {
-          song.album&&
-          <img src={song.album.image.cover.url} className="img-fluid rounded-start image-detail" alt="artist"/>
-      }
-        </div>
-    </div>
 
+                <div className="col-md-8 card-box-detail">
+                    <div className="card-body">
+                        <h5 className="card-title detail-name-music">
 
-    <div className="col-md-8 card-box-detail">
-      <div className="card-body">
-        <h5 className="card-title">
-            
- <div>
-      {
-          song.title&&
-          <h2>{song.title}</h2>
-      }
- </div>
-        </h5>
-        <h5 class="card-title">
-            
+                            <div>
+                                {
+                                    song.title&&
+                                    <h2>{song.title}</h2>
+                                }
+                            </div>
+                        </h5>
 
-        </h5>
-        <h5 className="card-title">
-        <div>
-      {
-          song.artists&&
-          <h2>{song.artists[0].fullName}</h2>
-      }
-</div>
-        </h5>
-        <p className="card-text">
-        <div>
-{song.lyrics &&
-        <p>{song.lyrics}</p>
-      }
-</div>
-        </p>
-        <p className="card-text"> 
-        <div>    
-<span onClick={()=>setIsPlaying(!isPlaying)}>
-                     {
-                         !isPlaying?    
-                         <svg xmlns="http://www.w3.org/2000/svg" color="black" width="16" height="16" fill="currentColor" className="bi bi-play-circle-fill" viewBox="0 0 16 16">
-                         <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z" />
-                     </svg>
-                     :
-                     <svg xmlns="http://www.w3.org/2000/svg" color="black" width="16" height="16" fill="currentColor" className="bi bi-pause-circle-fill" viewBox="0 0 16 16">
-  <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM6.25 5C5.56 5 5 5.56 5 6.25v3.5a1.25 1.25 0 1 0 2.5 0v-3.5C7.5 5.56 6.94 5 6.25 5zm3.5 0c-.69 0-1.25.56-1.25 1.25v3.5a1.25 1.25 0 1 0 2.5 0v-3.5C11 5.56 10.44 5 9.75 5z"/>
+                        
+                        <p className="card-text detail-lyrics">
+                            <div>
+                                {song.lyrics &&
+                                    <p>{song.lyrics}</p>
+                                }
+                            </div>
+                        </p>
+
+                        <h5 className="card-title detail-name-actor">
+                            <div>
+                                {
+                                    song.artists &&
+                                    <h6>{song.artists[0].fullName}</h6>
+                                }
+                            </div>
+                        </h5>
+
+                        <div className="btn-group detail-element">
+                            <figure>
+                                {song.audio &&
+
+                                    <audio controls src={song.audio.high.url} ref={audioElm}></audio>
+
+                                }
+                                
+                            </figure>
+                            <div>
+
+                            <div className="dropdown">
+                                <button className="btn btn-secondary dropdown-toggle " type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-cloud-download" viewBox="0 0 16 16">
+  <path d="M4.406 1.342A5.53 5.53 0 0 1 8 0c2.69 0 4.923 2 5.166 4.579C14.758 4.804 16 6.137 16 7.773 16 9.569 14.502 11 12.687 11H10a.5.5 0 0 1 0-1h2.688C13.979 10 15 8.988 15 7.773c0-1.216-1.02-2.228-2.313-2.228h-.5v-.5C12.188 2.825 10.328 1 8 1a4.53 4.53 0 0 0-2.941 1.1c-.757.652-1.153 1.438-1.153 2.055v.448l-.445.049C2.064 4.805 1 5.952 1 7.318 1 8.785 2.23 10 3.781 10H6a.5.5 0 0 1 0 1H3.781C1.708 11 0 9.366 0 7.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383z"/>
+  <path d="M7.646 15.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 14.293V5.5a.5.5 0 0 0-1 0v8.793l-2.146-2.147a.5.5 0 0 0-.708.708l3 3z"/>
 </svg>
-                     }
-              </span>
-</div>
+                                </button>
+                                {
+                                    song.audio &&
+                                    <>
+                                        <ul className="dropdown-menu">
+                                            <li><button className="dropdown-item" type="button"><a className='text-decoration-none text-dark' href={song.audio.medium.url} download>with 128 quality</a></button></li>
+                                            <li><button className="dropdown-item" type="button">  <a className='text-decoration-none text-dark' href={song.audio.high.url} download>with 320 quality</a></button></li>
+                                        </ul>
+                                    </>}
+                            </div>
+                        </div>
+                        </div>
+                        
 
-           </p>
-      
-      <div>
-
-<div class="dropdown">
-  <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-    Download
-  </button>
-  {
-    song.audio&&
-    <>
-  <ul class="dropdown-menu">
-    <li><button class="dropdown-item" type="button"><a  className='text-decoration-none text-dark' href={song.audio.medium.url} download>with 128 quality</a></button></li>
-    <li><button class="dropdown-item" type="button">  <a className='text-decoration-none text-dark' href={song.audio.high.url} download>with 320 quality</a></button></li>
-  </ul> 
-  </>} 
-</div>
-</div>
-</div>
-    </div>
-  </div>
-</div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
     );
 }
 
